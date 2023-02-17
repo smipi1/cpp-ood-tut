@@ -9,8 +9,6 @@ struct student {
     char* _name;
 };
 
-static int studentCount;
-
 Student newStudent()
 {
     Student s = (Student) malloc(sizeof(struct student));
