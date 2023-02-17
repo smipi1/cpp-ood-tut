@@ -1,4 +1,4 @@
-## Examples in ANSI C
+# Examples in ANSI C
 
 See simple ANSI C example:
 * [student.h](../src/ansi-c-oop-example/student.h)
@@ -181,4 +181,4 @@ Sequence of events:
     
 ---
 
-[Prev](./context.md) | [Top](../README.md)
+[Previous](./context.md) | [Top](../README.md) | [Next](./CPP-examples.md)
