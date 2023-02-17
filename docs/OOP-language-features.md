@@ -17,6 +17,8 @@
 * [Objects](https://en.wikipedia.org/wiki/Object_(object-oriented_programming)) are instances of classes:
   - The *state* is usually hidden and kept private.
   - Interactions are mediated by the *methods*.
+
+![Objects and classes](./images/objects-and-classes.png)
   
 ### Class terminology:
 
@@ -31,10 +33,29 @@
 
 ## Class-based vs prototype based
 
+* *Class-based*: Define *classes* beforehand, then instantiate *objects* based on classes. E.g.:
+  - PHP
+  - C++
+  - Java
+  - C#
+  - Python
+* *Prototype-based*: *Objects* are primary, and *classes* don't exist. Each *object* may link to one other object as a *prototype* (AKA *equivalence class*). E.g.:
+  - Javascript
+  - ECMAScript
+  - Typescript
+  - Lua
 
-## Dynamic dispatch / message parsing
+---
 
+## Dynamic dispatch
 
+On a *method call*, the *object* selects the appropriate procedural code to execute. Typically the *method* is looked up at run-time in a table.
+
+Example: Which `takeBite()` procedural code should be executed in `eat()`?
+
+![Example](./images/dynamic-dispatch.png)
+
+---
 ## Data abstraction
 
 

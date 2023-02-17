@@ -1,0 +1,23 @@
+@startuml
+
+class Bicycle {
+    -color
+    -size
+    +Bicycle(color: Color, size: Size)
+    +ride()
+}
+
+object SusansBicycle {
+    color = Yellow
+    size = 43
+}
+
+object JohnsBicycle {
+    color = Blue
+    size = 46
+}
+
+Bicycle <|-- SusansBicycle
+Bicycle <|-- JohnsBicycle
+
+@enduml

@@ -1,0 +1,44 @@
+@startuml
+
+class Person {
+    +serveMeal(items[]: Food)
+    +eat()
+}
+
+abstract FoodItem {
+    +takeBite()
+}
+
+class Fruit {
+    +takeBite()
+}
+
+class Pizza {
+    +takeBite()
+}
+
+class Salad {
+    +takeBite()
+}
+
+class Apple {
+    +takeBite()
+}
+
+class Pear {
+    +takeBite()
+}
+
+class RockitApple {
+    +takeBite()
+}
+
+Apple <|-- RockitApple
+Fruit <|-- Apple
+Fruit <|-- Pear
+FoodItem <|-- Fruit
+FoodItem <|-- Pizza
+FoodItem <|-- Salad
+Person o-right- "0..*" FoodItem: meal
+
+@enduml
